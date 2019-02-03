@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+  <body onload='main()'>
+    <div class="core-page">
+      <canvas id='dawin-webgl'>
+        Utilisez un navigateur compatible avec WebGL
+      </canvas>
+      <div class="setting">
+        <span class="icon-setting"><i class="fas fa-sliders-h"></i><div></div></span>
+        <a id="reset">Reset</a>
+
+
+        <div>
+          <h2>Rotation</h2>
+          <div>
+            <span>X</span>
+            <p>
+              <input type="range" id="rotateX" min="-6.28" max="6.28" step="0.01"/>
+            </p>
+          </div>
+          <div >
+            <span>Y</span>
+            <p>
+              <input type="range" id="rotateY" min="-6.28" max="6.28" step="0.01"/>
+            </p>
+          </div>
+          <div>
+            <span>Z</span>
+            <p>
+              <input type="range" id="rotateZ" min="-6.28" max="6.28" step="0.01"/>
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div>
+          <h2>Translation</h2>
+
+          <div>
+            <span>X</span>
+            <p>
+              <input type="range" id="translateX" min="-10" max="10" step="0.1"/>
+            </p>
+          </div>
+          <div>
+            <span>Y</span>
+            <p>
+              <input type="range" id="translateY" min="-10" max="10" step="0.1"/>
+            </p>
+          </div>
+          <div>
+            <span>Z</span>
+            <p>
+              <input type="range" id="translateZ" min="-10" max="10" step="0.1"/>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Caméra</h2>
+          <div>
+            <span>FOV</span>
+            <p>
+              <input type="range" id="fov" min="30" max="120" step="1"/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='gl-matrix-min.js'></script>
+    <script src='tp3.js'></script>
+
+  </body>
+</html>

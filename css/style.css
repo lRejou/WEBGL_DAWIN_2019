@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.core-page{
+  width: 100%;
+  text-align: center;
+}
+canvas{
+  width: 1024px;
+  height:400px;
+}
+.setting{
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+#reset{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 15px;
+  background-color: #5dade2;
+  color: white;
+  cursor: pointer;
+  border: solid 1px #5dade2;
+  border-radius: 3px;
+  transition: .3s;
+}
+#reset:hover{
+  background-color: white;
+  color: #5dade2;
+  transition: .3s;
+}
+.icon-setting{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  color:  #5dade2;
+  top: 20px;
+  left: 0px;
+  font-size: 24px;
+  border: solid 1px grey;
+  border-radius: 50px;
+}
+.icon-setting i{
+  position: absolute;;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.icon-setting div{
+  position: absolute;;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: solid 5px white;
+  background-color: #5dade2;
+}
+.setting > div{
+
+}
